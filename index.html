@@ -11,14 +11,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css" integrity="sha256-iU/Wh1HMAs/NgpurDAu14e7S3FkllcJ5aPnpPDdnO6c=" crossorigin="anonymous" />
     <style>
         td:last-child {
-            max-width: 150px;
+            width: 150px;
         }
     </style>
 </head>
 
 <body>
     <div class="container-fluid">
-        <h1>Karskema</h1>
+        <h1 class="text-center">Karskema</h1>
+        <p class="lead">
+            For de fleste kar er der flere billeder.
+        </p>
         <table class="table table-responsive table-striped">
             <thead>
                 <tr class="table-dark">
@@ -28,7 +31,7 @@
                     <th>Tunica intima</th>
                     <th>Tunica media</th>
                     <th>Tunica adventitia</th>
-                    <th>Billeder (klik for flere)</th>
+                    <th>Billeder</th>
                 </tr>
             </thead>
             <tbody>
@@ -45,12 +48,16 @@
                     </td>
                     <td>
                         <ul>
-                            <li>Fenestrerede elastiske membraner</li>
+                            <li>Ca. 50 fenestrerede elastiske membraner
+                                <ul>
+                                    <li>
+                                        <em>Lamina elastica interna/externa</em>
+                                    </li>
+                                </ul>
+                            </li>
                             <li>Glatte muskelceller</li>
                             <li>Elastiske og kollagene fibre</li>
-                            <li>
-                                <em>Lamina elastica interna/externa</em>
-                            </li>
+
                         </ul>
                     </td>
                     <td>
@@ -59,15 +66,16 @@
                             <li>
                                 <em>Vasa vasorum</em>
                             </li>
+                            <li>Nerver (<em>nervi vasorum</em>)</li>
                         </ul>
                     </td>
                     <td>
-                        <a href="snit/elastiske/15_0.5x.jpg" data-lightbox="elastiske" data-title="Præp. 15. 0.5x forstørrelse">
-                            <img src="snit/elastiske/15_0.5x.jpg" class="img-fluid">
+                        <a href="snit/art_elastiske/15_0.5x.jpg" data-lightbox="elastiske" data-title="Præp. 15. 0.5x forstørrelse">
+                            <img src="snit/art_elastiske/15_0.5x.jpg" class="img-fluid">
                         </a>
-                        <a href="snit/elastiske/15_4x.jpg" data-lightbox="elastiske" data-title="Præp. 15. 4x forstørrelse"></a>
-                        <a href="snit/elastiske/16_0.5x.jpg" data-lightbox="elastiske" data-title="Præp. 16. 0.5x forstørrelse"></a>
-                        <a href="snit/elastiske/16_4x.jpg" data-lightbox="elastiske" data-title="Præp. 16. 4x forstørrelse"></a>
+                        <a href="snit/art_elastiske/15_4x.jpg" data-lightbox="elastiske" data-title="Præp. 15. 4x forstørrelse"></a>
+                        <a href="snit/art_elastiske/16_0.5x.jpg" data-lightbox="elastiske" data-title="Præp. 16. 0.5x forstørrelse"></a>
+                        <a href="snit/art_elastiske/16_4x.jpg" data-lightbox="elastiske" data-title="Præp. 16. 4x forstørrelse"></a>
                     </td>
                 </tr>
                 <tr class="table-danger">
@@ -82,7 +90,7 @@
                     </td>
                     <td>
                         <ul>
-                            <li>Glat muskulatur</li>
+                            <li>Glat muskulatur (≥ 4 lag)</li>
                             <li>
                                 <em>Lamina elastica interna</em>
                             </li>
@@ -102,12 +110,14 @@
                         </ul>
                     </td>
                     <td>
-                        <a href="snit/muskulaere/42_10x.jpg" data-lightbox="muskulaere" data-title="Præp. 42. 10x forstørrelse">
-                            <img src="snit/muskulaere/42_10x.jpg" class="img-fluid">
+                        <a href="snit/art_muskulaere/42_10x.jpg" data-lightbox="muskulaere" data-title="Præp. 42. Æggeleder. 10x forstørrelse">
+                            <img src="snit/art_muskulaere/42_10x.jpg" class="img-fluid">
                         </a>
-                        <a href="snit/muskulaere/42_10x2.jpg" data-lightbox="muskulaere" data-title="Præp. 42. 10x forstørrelse"></a>
-                        <a href="snit/muskulaere/42_4x.jpg" data-lightbox="muskulaere" data-title="Præp. 42. 4x forstørrelse"></a>
-                    </td>    
+                        <a href="snit/art_muskulaere/42_1.jpg" data-lightbox="muskulaere" data-title="Præp. 42. Æggeleder."></a>
+                        <a href="snit/art_muskulaere/42_4x.jpg" data-lightbox="muskulaere" data-title="Præp. 42. Æggeleder. 4x forstørrelse"></a>
+                        <a href="snit/art_muskulaere/13_1.jpg" data-lightbox="muskulaere" data-title="Præp. 13. Koronarkar."></a>
+                        <a href="snit/art_muskulaere/13_2.jpg" data-lightbox="muskulaere" data-title="Præp. 13. Koronarkar."></a>
+                    </td>
                 </tr>
                 <tr class="table-danger">
                     <td>Arterioler</td>
@@ -119,12 +129,28 @@
                         </ul>
                     </td>
                     <td>Endotel</td>
-                    <td>1-3 lag glatte muskelceller</td>
+                    <td>
+                        <ul>
+                            <li>1-3 lag glatte muskelceller</li>
+                            <li><em>Lamina elastica interna</em> i de større arterioler</li>
+                        </ul>
+                    </td>
                     <td>Løst BV</td>
-                    <td>BILLEDE</td>
+                    <td>
+                        <a href="snit/art_arterioler/42_1.jpg" data-lightbox="arterioler" data-title="Præp. 42. Æggeleder.">
+                        <img src="snit/art_arterioler/42_1.jpg" class="img-fluid">
+                    </a>
+                        <a href="snit/art_arterioler/42_2.jpg" data-lightbox="arterioler" data-title="Præp. 42. Æggeleder."></a>
+                        <a href="snit/art_arterioler/42_3.jpg" data-lightbox="arterioler" data-title="Præp. 42. Æggeleder."></a>
+                        <a href="snit/art_arterioler/42_4.jpg" data-lightbox="arterioler" data-title="Præp. 42. Æggeleder."></a>
+                    </td>
                 </tr>
                 <tr class="table-danger">
-                    <td>Kapillærer</td>
+                    <td>Kapillærer
+                        <div class="font-weight-normal">
+                            (kontinuerlige, fenestrerede)
+                        </div>
+                    </td>
                     <td>4–10 µm</td>
                     <td>Stoftransport</td>
                     <td>
@@ -135,7 +161,39 @@
                     </td>
                     <td>Ingen</td>
                     <td>Ingen</td>
-                    <td>BILLEDE</td>
+                    <td>
+                        <a href="snit/art_kapp/42_1.jpg" data-lightbox="kapp" data-title="Præp. 42. Æggeleder.">
+                        <img src="snit/art_kapp/42_1.jpg" class="img-fluid">
+                    </a>
+                        <a href="snit/art_kapp/42_2.jpg" data-lightbox="kapp" data-title="Præp. 42. Æggeleder."></a>
+                        <a href="snit/art_kapp/42_3.jpg" data-lightbox="kapp" data-title="Præp. 42. Æggeleder."></a>
+                        <a href="snit/art_kapp/7_1.jpg" data-lightbox="kapp" data-title="Præp. 7. Tunge."></a>
+                    </td>
+                </tr>
+                <tr class="table-danger">
+                    <td>Sinusoider
+                        <div class="font-weight-normal">
+                            (lever, milt, knoglemarv)
+                        </div>
+                    </td>
+                    <td>Varierende<br>30–40 µm</td>
+                    <td>Stof- og celletransport</td>
+                    <td>
+                        <ul>
+                            <li>Endotel (+/– huller)</li>
+                            <li class="text-nowrap">+/– kontaktkomplekser</li>
+                            <li>Usammenhængende basalmembran</li>
+                        </ul>
+                    </td>
+                    <td>Ingen</td>
+                    <td>Ingen</td>
+                    <td>
+                        <a href="snit/art_sinusoide/11_1.jpg" data-lightbox="sinusoide" data-title="Præp. 11. Knoglemarv.">
+                        <img src="snit/art_sinusoide/11_1.jpg" class="img-fluid">
+                    </a>
+                        <a href="snit/art_sinusoide/62_1.jpg" data-lightbox="sinusoide" data-title="Præp. 62. Milt."></a>
+                        <a href="snit/art_sinusoide/88_1.jpg" data-lightbox="sinusoide" data-title="Præp. 88. Lever."></a>
+                    </td>
                 </tr>
                 <tr class="table-info">
                     <td>Postkapillære venoler</td>
@@ -149,12 +207,22 @@
                     <td>
                         <ul>
                             <li>Endotel</li>
-                            <li>Evt. pericytter (sjældent)</li>
+                            <li>Evt. pericytter</li>
                         </ul>
                     </td>
                     <td>Ingen</td>
                     <td>Ingen</td>
-                    <td>BILLEDE</td>
+                    <td>
+                        <a href="snit/ven_post/42_1.jpg" data-lightbox="post" data-title="Præp. 42. Æggeleder.">
+                        <img src="snit/ven_post/42_1.jpg" class="img-fluid">
+                    </a>
+                        <a href="snit/ven_post/42_2.jpg" data-lightbox="post" data-title="Præp. 42. Æggeleder."></a>
+                        <a href="snit/ven_post/42_3.jpg" data-lightbox="post" data-title="Præp. 42. Æggeleder."></a>
+                        <a href="snit/ven_post/42_4.jpg" data-lightbox="post" data-title="Præp. 42. Æggeleder."></a>
+                        <a href="snit/ven_post/42_5.jpg" data-lightbox="post" data-title="Præp. 42. Æggeleder."></a>
+                        <a href="snit/ven_post/7_1.jpg" data-lightbox="post" data-title="Præp. 7. Tunge."></a>
+                        <a href="snit/ven_post/7_2.jpg" data-lightbox="post" data-title="Præp. 7. Tunge."></a>
+                    </td>
                 </tr>
                 <tr class="table-info">
                     <td>Muskulære venoler</td>
@@ -163,7 +231,13 @@
                     <td>Endotel</td>
                     <td>1-2 lag glatte muskelceller</td>
                     <td>Evt. tyndt lag løst BV</td>
-                    <td>BILLEDE</td>
+                    <td>
+                        <a href="snit/ven_musk/42_1.jpg" data-lightbox="musk" data-title="Præp. 42. Æggeleder.">
+                        <img src="snit/ven_musk/42_1.jpg" class="img-fluid">
+                    </a>
+                        <a href="snit/ven_musk/42_2.jpg" data-lightbox="musk" data-title="Præp. 42. Æggeleder."></a>
+                        <a href="snit/ven_musk/42_3.jpg" data-lightbox="musk" data-title="Præp. 42. Æggeleder."></a>
+                    </td>
                 </tr>
                 <tr class="table-info">
                     <td>Små/mellemstore vener</td>
@@ -177,7 +251,13 @@
                     </td>
                     <td>3-4 lag glatte muskelceller</td>
                     <td>Tykt lag løst BV</td>
-                    <td>BILLEDE</td>
+                    <td>
+                        <a href="snit/ven_lille/42_1.jpg" data-lightbox="lille" data-title="Præp. 42. Æggeleder.">
+                        <img src="snit/ven_lille/42_1.jpg" class="img-fluid">
+                    </a>
+                    <a href="snit/ven_lille/13_1.jpg" data-lightbox="lille" data-title="Præp. 13. Koronarkar."></a>
+                    <a href="snit/ven_lille/13_2.jpg" data-lightbox="lille" data-title="Præp. 13. Koronarkar."></a>
+                    </td>
                 </tr>
                 <tr class="table-info">
                     <td>Store vener</td>
@@ -189,28 +269,60 @@
                             <li>Tykt lag løst BV</li>
                         </ul>
                     </td>
-                    <td>Er tynd, kan evt. mangle helt</td>
                     <td>
                         <ul>
-                            <li>Glat muskulatur (længde)</li>
+                            <li>Glatte muskelceller</li>
+                            <li>Er tynd, kan evt. mangle helt</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Glat muskulatur (længdeløbende)</li>
                             <li>
                                 <em>Vasa vasorum</em>
                             </li>
                         </ul>
                     </td>
-                    <td>Geneser</td>
+                    <td>Se Geneser, fig. 15-19</td>
                 </tr>
                 <tr class="table-success">
                     <td>Lymfekapillær</td>
                     <td>≤ 100 µm</td>
                     <td>Transporterer væske, antistoffer, immunceller</td>
-                    <td>Endotel</td>
+                    <td>
+                        <ul>
+                            <li>Endotel uden kontaktkomplekser</li>
+                            <li>Usammenhængende/ingen basalmembran</li>
+                        </ul>
+                    </td>
                     <td>Ingen</td>
                     <td>Ingen</td>
-                    <td>Billede</td>
+                    <td>
+                        <a href="snit/lymfe_kapp/42_1.jpg" data-lightbox="lymfe" data-title="Præp. 42. Æggeleder.">
+                        <img src="snit/lymfe_kapp/42_1.jpg" class="img-fluid">
+                    </a>
+                    <a href="snit/lymfe_kapp/82_1.jpg" data-lightbox="lymfe" data-title="Præp. 82. Jejunum (tyndtarm)."></a>
+                    </td>
+                </tr>
+                <tr class="table-success">
+                    <td>Samlekar</td>
+                    <td>100 µm–5 mm</td>
+                    <td>Transporterer væske, antistoffer, immunceller</td>
+                    <td>Endotel, BV, muskel</td>
+                    <td>Ingen</td>
+                    <td>Ingen</td>
+                    <td>Se Geneser, fig. 15-27</td>
                 </tr>
             </tbody>
         </table>
+
+        <footer>
+            <p>
+                I nogle af eksemplerne er der tale om grænsetilfælde – der vil kunne argumenteres for, at karret er af en anden type, end jeg her har valgt.
+            </p>
+            
+            <p>Alle billeder er taget fra <a href="http://anat-microscopy.ana.au.dk" target="_blank">HistoViewer</a>.</p>
+        </footer>
     </div>
 
     <!-- Optional JavaScript -->
@@ -221,10 +333,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>
     <script>
     $(document).ready(function() {
-	$("ul").addClass("list-unstyled");
+	lightbox.option({
+		wrapAround: true
+	});
+	$("td > ul").addClass("list-unstyled");
 	$("td:nth-child(2)").addClass("text-right");
 	$("td:nth-child(1)").addClass("font-weight-bold");
-	$("a").click(function(e) {
+	$("td a").click(function(e) {
 		e.preventDefault();
 	});
 });
