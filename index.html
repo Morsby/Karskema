@@ -13,6 +13,15 @@
         td:last-child {
             width: 150px;
         }
+        
+        a.abbr {
+            color: #000;
+            border-bottom: 1px dotted #000;
+            text-decoration: none;
+        }
+        a.abbr:hover {
+            cursor:help;
+        }
     </style>
 </head>
 
@@ -51,7 +60,7 @@
                             <li>Ca. 50 fenestrerede elastiske membraner
                                 <ul>
                                     <li>
-                                        <em>Lamina elastica interna/externa</em>
+                                        <em>Lamina elastica <abbr title="definitorisk den inderste, vi (du) kan se">interna</abbr>/<abbr title="definitorisk den yderste, vi (du) kan se">externa</abbr></em>
                                     </li>
                                 </ul>
                             </li>
@@ -81,7 +90,10 @@
                 <tr class="table-danger">
                     <td>Muskulære arterier</td>
                     <td>0,1–10 mm</td>
-                    <td>Regulerer blodtilførsel til organer</td>
+                    <td><ul>
+                        <li class="font-weight-bold">Fordelingskar</li>
+                        <li>Regulerer blodtilførsel til organer</li>
+                    </ul></td>
                     <td>
                         <ul>
                             <li>Endotel</li>
@@ -124,6 +136,7 @@
                     <td>10–100 µm</td>
                     <td>
                         <ul>
+                            <li class="font-weight-bold">Modstandskar</li>
                             <li>Regulerer blodtrykket</li>
                             <li>Sænker trykket før blodet når kapillærer</li>
                         </ul>
@@ -339,15 +352,15 @@
 	$("td > ul").addClass("list-unstyled");
 	$("td:nth-child(2)").addClass("text-right text-nowrap");
 	$("td:nth-child(1)").addClass("font-weight-bold");
-	$("td a").click(function(e) {
-		e.preventDefault();
-	});
+
 
 	var abbrs = {
 		BV: "bindevæv",
 		"vasa vasorum": "kar til karrene",
 		pericytter:
-			"Celler der ligger omkring karret (UDENFOR basalmembranen) og kan trække sig sammen, derved påvirke blodgennemstrømningen"
+			"Celler der ligger omkring karret (UDENFOR basalmembranen) og kan trække sig sammen, derved påvirke blodgennemstrømningen",
+        celletransport: "i knoglemarven træder modne blodceller ind i karrene, i milten filtreres blodet (tjekkes for slidte erytrocytter, bakterier)",
+        "blodceller kan forlade blodbanen": "leukocytter vil træde ud i (evt. inflammerede) væv igennem postkapillære venoler"
 	};
 
 	function generateAbbr(tag, title, selector) {
@@ -356,14 +369,20 @@
 				.html()
 				.replace(
 					new RegExp("(" + tag + ")", "ig"),
-					'<abbr title="' + title + '">$1</abbr>'
+					'<a href="#" data-toggle="tooltip" title="' + title + '" class="abbr">$1</a>'
 				);
 		});
 	}
 
 	$.each(abbrs, function(key, val) {
-		generateAbbr(key, val, "td *");
+		generateAbbr(key, val, "td, td *");
 	});
+    
+    $('[data-toggle="tooltip"]').tooltip(); 
+    
+    $("td a, a.noclick").click(function(e) {
+        e.preventDefault();
+    });
 });
 </script>
 </body>
