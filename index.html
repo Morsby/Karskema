@@ -342,6 +342,28 @@
 	$("td a").click(function(e) {
 		e.preventDefault();
 	});
+
+	var abbrs = {
+		BV: "bindevæv",
+		"vasa vasorum": "kar til karrene",
+		pericytter:
+			"Celler der ligger omkring karret (UDENFOR basalmembranen) og kan trække sig sammen, derved påvirke blodgennemstrømningen"
+	};
+
+	function generateAbbr(tag, title, selector) {
+		$(selector).html(function() {
+			return $(this)
+				.html()
+				.replace(
+					new RegExp("(" + tag + ")", "ig"),
+					'<abbr title="' + title + '">$1</abbr>'
+				);
+		});
+	}
+
+	$.each(abbrs, function(key, val) {
+		generateAbbr(key, val, "td *");
+	});
 });
 </script>
 </body>
